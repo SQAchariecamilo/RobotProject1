@@ -30,6 +30,8 @@ MySecondTest
 MyThirdTest
     Log    Third Test...
     
+MyFourthTest
+    Log    Fourth Test...
     
 # FirstSeleniumTest
     # Open Browser    https://www.google.com/    chrome
