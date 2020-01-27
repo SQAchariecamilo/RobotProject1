@@ -54,4 +54,10 @@ MyFourthTest
     # Log    Test Completed  
     # Log    This test was executed by %{username} on %{os}
     
+ForLoopTrial
+    FOR    ${i}    IN    RANGE    1    10
+    Open Browser    https://www.google.com/    chrome
+    Sleep    2   
+    Close Browser
+    END
       

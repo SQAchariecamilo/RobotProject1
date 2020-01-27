@@ -14,7 +14,7 @@ MicrosoftLogin
     Sleep    5    
     Input Password    id=password    Test1234   
     Click Button    id=loginButton
-    Input Text    id=otp    483797    #PingID
+    Input Text    id=otp    347723    #PingID
     Press Keys    id=otp    ENTER     
     Set Browser Implicit Wait    5 
     Sleep    10 
@@ -41,14 +41,19 @@ eOrder_Trial
     Close Browser
     
 EDI_trial
+    FOR    ${element}    IN    1    10
     Open Browser    ${EDI_URL}    chrome
     Set Browser Implicit Wait    5
     MicrosoftLogin
     Click Element    xpath://span[@class='ml-2']    
     Input Text    xpath://input[@placeholder='Project Name']    RF_CHARIE_TEST    
     Click Element    xpath://button[@class='el-button px-5 el-button--primary el-button--mini']     
-    Sleep    10    
+    Sleep    10   
+    Close Browser 
+    END
+    
      
     # Click Element    link=Start new project    
-    Close Browser
+    
+    
     
